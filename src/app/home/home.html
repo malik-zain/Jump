@@ -1,0 +1,65 @@
+<div class="home-container">
+  <!-- text div -->
+  <div class="text-section">
+    <h1 class="heading h-1">
+      <b>Nike <span [style.color]="selectedColor" class="air">Air</span> </b>
+    </h1>
+    <h1 class="heading h-2"><b>Max</b></h1>
+    <a routerLink="/services" class="btn btn-primary shop">Shop now</a>
+  </div>
+
+  <!-- image div -->
+  <div class="image-section">
+    <img [src]="selectedImage" alt="Shoes" class="hero-image" id="main-image" />
+  </div>
+
+  <!-- icons div -->
+  <div class="icons-section">
+    <img src="/red.png" alt="Shoes 1" (click)="changeImage('/red.png', 'red')" class="brand-icon" />
+    <img
+      src="/blue.png"
+      alt="Shoes 2"
+      (click)="changeImage('/blue.png', 'blue')"
+      class="brand-icon"
+    />
+    <img
+      src="/yellow.png"
+      alt="Shoes 3"
+      (click)="changeImage('/yellow.png', 'yellow')"
+      class="brand-icon"
+    />
+  </div>
+</div>
+<hr />
+
+<!-- Second Div starts from here ****Second Div**** -->
+<div class="home-container-2 home ">
+  <h2 class="explore">Explore Our Collection</h2>
+  <div class="section">
+    <!-- mens -->
+    <div class="category category-1">
+      <img src="menshoes.jpg" alt="men" class="men" />
+      <div class="overlay">
+        <div class="texts">Men's Choice</div>
+      </div>
+      <h3>Men's</h3>
+    </div>
+    <!-- women -->
+    <div class="category category-2">
+      <img src="girlshoes.jpg" alt="women" class="women" />
+      <div class="overlay">
+        <div class="texts">Women's Choice</div>
+      </div>
+      <h3>Women's</h3>
+    </div>
+    <!-- kids -->
+    <div class="category category-3">
+      <img src="kidsshoes.jpg" alt="kids" class="kids" />
+      <div class="overlay">
+        <div class="texts">Kids' Choice</div>
+      </div>
+      <h3>Kids</h3>
+    </div>
+  </div>
+</div>
+<hr />

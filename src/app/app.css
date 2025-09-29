@@ -1,0 +1,31 @@
+.navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
+    margin-left: 4rem;
+}
+
+nav {
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+.nav-link {
+    margin: 0 0.8rem; 
+}
+
+.nav-link:hover {
+    color: black;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 767px) {
+    .nav-link {
+        margin: 0.3rem 0; 
+    }
+   
+}
